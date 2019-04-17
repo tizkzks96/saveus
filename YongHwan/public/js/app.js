@@ -89,7 +89,7 @@
         // Get id of current scroll item
         var cur = scrollItems.map(function () {
             if ($(this).offset().top < fromTop)
-                return this;
+                return this; 
         });
 
         // Get the id of the current element
@@ -261,6 +261,7 @@ $("#send-mail").click(function () {
     });
 
 
+    
 
     //Function for show or hide portfolio desctiption.
     $.fn.showHide = function (options) {
@@ -277,8 +278,24 @@ $("#send-mail").click(function () {
             var toggleClick = $(this);
             var toggleDiv = $(this).attr('rel');
             $(toggleDiv).slideToggle(options.speed, options.easing, function () {
-                if (options.changeText == 1) {
-                    $(toggleDiv).is(":visible") ? toggleClick.text(options.hideText) : toggleClick.text(options.showText);
+                //수정중
+                // if (!$(toggleDiv).is(":visible")) {
+                //     alert($(toggleDiv).is(":visible"))
+                //     toggleClick.text(options.showText);
+                // }
+                // if (options.changeText == 1) {
+                //     $(toggleDiv).is(":visible") ? toggleClick.text(options.hideText) : toggleClick.text(options.showText);
+                // }
+            });
+            $.ajax({
+                type : "GET",
+                url : "/public/js/test.html",
+                dataType : "html",
+                error : function() {
+                alert('통신실패!!');
+                },
+                success : function(data) {
+                    $(toggleDiv).html(data);
                 }
             });
             return false;
@@ -371,6 +388,18 @@ $("#send-mail").click(function () {
             });
         }
     });
+
+
+
+
+
+
+
+
+
+
+
+  
 });
 
 //Initialize google map for contact setion with your location.
