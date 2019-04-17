@@ -1,4 +1,9 @@
-
+<!DOCTYPE html>
+<head>
+<title> treegrid9 </title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+              integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+              crossorigin="anonymous"></script>
 <script>
 /*
 트리용 데이터(JSON)을 화면에 출력
@@ -14,9 +19,7 @@ var data = [
                 {"task": "job3", "startdate": "2016-11-12", "enddate": "2016-12-11"}
             ];
  
-
-
-$(document).ready(function(){
+window.onload = function() {
     var tree = $("#tree");
     var table = $("<table>").appendTo(tree);
     table.css({"border-collapse": "collapse", "border": "1px gray solid"});
@@ -29,24 +32,9 @@ $(document).ready(function(){
             td.css({"width": fieldInfo.width+"px", "border": "1px gray solid"});
         });
     });
-});
+}
 </script>
+</head>
+ 
+<div id="tree"></div>
 
-<div class="span6" >
-                <img src="/public/images/Portfolio02.png" alt="project 2">
-            </div>
-            <div class="span6" >
-                
-                    <div class="project-title clearfix">
-                        <h3>Webste for Some Client</h3>
-                        <span class="show_hide close">
-                            <i class="icon-cancel"></i>
-                        </span>
-                    </div>
-                    <div id =tree>
-                        
-                            
-            </div>
-
-
-            <script type="text/javascript" src="/public/js/app.js"></script>
