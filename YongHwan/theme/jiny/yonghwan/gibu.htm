@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=utf-8>
+        <title>레이아웃</title>
+        <style>
+        html,body{
+            margin: 0px auto;
+            width:1000px;
+		    font-family: /*"돋움", dotum, "굴림", gulim, arial, helvetica,*/ sans-serif;
+          }
+
+            .campaign{
+              margin: 0px auto;
+              color:#2F9D27;
+            }
+
+            .image{
+                width:500px;
+                height:300px;
+                float:left;
+            }
+            .people{
+                width:450px;
+                height:285px;
+                float:left;
+                text-align: left;
+		        margin-top:15px;
+		        line-height:200%;
+                margin-left:50px;
+                
+            }
+            .imagelist{
+                width:100%;
+                height:auto;
+                margin-right:1%;
+                padding:0.5%;
+
+            }
+            
+            .text{
+                clear:both;
+                width:1000px;
+            }
+            
+            .send{
+                width:458x;
+                height:35px;
+                background-color:#71BA1F;
+		        text-align:center;
+		        border-radius:5px;
+		        margin-top:25px;
+		        /* padding-top:5px; */
+                color:white;
+                font-weight:bold;
+                
+            }
+
+	        .date{
+                width:50px;
+                height:30px;
+                background-color:#ED4C00;
+		        text-align:center;
+		        border-radius:10px;
+                float:left;
+                color:white;
+                
+            }
+
+            .magam{
+                float:left;
+                padding-right:10px;
+            }
+
+            .dates{
+                width:500px;
+                height:50px;
+            }
+
+            .people b{
+                color:#69AF1D;
+            }
+
+            .skills {
+                list-style-type: none;
+                position: relative;
+                margin:0px;
+                top:10px;
+            }
+            .skills li {
+                margin-bottom:30px;
+                background:#EAEAEA;
+                height:15px;
+                padding:1px;
+                border-radius:5px;
+            }
+            .skills li h3 {
+                position: relative;
+                font-size: 15px;
+                padding:0;
+                margin:0;
+                left: 10px;
+                z-index: 1;
+                color: #181A1C;
+                opacity:0;
+            }
+            .skills li .bar {
+                height:15px;
+                position:absolute;
+                background-color: #71BA1F;
+                border-radius:5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="campaign">
+            <b>xx 캠페인>깨끗한 물</b>
+        </div>
+        <div class="title"><h2>아이들이 깨끗한 물을 마실 수 있도록 도와주세요</h2></div>
+        <div id="imagelist">
+        <div class="image">
+                <img src="/public/images/Portfolio01.png" alt="image01" width="500" height="300">
+        </div>
+    
+        <div class="people">
+            <div class="dates">   
+            <div class="magam"><b>몇월</b> <b>몇일</b>마감<br></div>
+            <div class="date">D-43</div>
+            </div>
+            <div class="skills">
+                <li>
+                    <span class="bar" data-width="100%"><h3>테스트 글씨 차지용~~ 80%쯤 보이게 해보자!!</h3></span>
+                </li>
+            </div>
+            <b>70%</b> 달성<br>
+            <b>000,000,000</b>원 (목표금액 000,000,000원)<br>
+            <b>몇명</b>의 기부자<br>
+            <div class="send">후원하기</div>
+        </div>
+    </div>
+        <div class="text">
+            <ul style="list-style-type: square"><br>
+                <li><b>물 한방울이 얼마나 소중한지 아시나요?</b>
+                        <p></p>Text - Double click to editDouble click to editDouble click to editDouble click to editDouble click to edit
+                        Text - Double click to editDouble click to editDouble click to editDouble click to editDouble click to edit
+                        Text - Double click to editDouble click to editDouble click to editDouble click to editDouble click to edit</p>
+                </li>
+                <li><b>물이 부족해 마음껏 사용하지 못하는 현실</b>
+                        <p> Text - Double click to editDouble click to editDouble click to editDouble click to editDouble click to edit
+                        Text - Double click to editDouble click to editDouble click to editDouble click to editDouble click to edit
+                        Text - Double click to editDouble click to editDouble click to editDouble click to editDouble click to edit</p>
+                </li>
+            </ul>
+        </div>
+        
+
+    </body>
+</html>
