@@ -113,8 +113,28 @@
         </style>
     </head>
     <body>
+
+
+    <script>
+
+var option =[
+    {
+        "name": "xx 캠페인>깨끗한 물"
+    }
+]
+
+        $(document).ready(function(){
+            var info = $("#info");
+                
+                $.each( option, function( i, fieldInfo ) {
+                    info.html( fieldInfo.name);
+                });
+        });
+    </script>
+
+
         <div class="campaign">
-            <b>xx 캠페인>깨끗한 물</b>
+            <b id="info"></b>
         </div>
         <div class="title"><h2>아이들이 깨끗한 물을 마실 수 있도록 도와주세요</h2></div>
         <div id="imagelist">

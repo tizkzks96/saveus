@@ -289,7 +289,7 @@ $("#send-mail").click(function () {
             });
             $.ajax({
                 type : "GET",
-                url : "/public/js/test.html",
+                url : "/resource/custom_pages/gibu.htm",
                 dataType : "html",
                 error : function() {
                 alert('통신실패!!');
