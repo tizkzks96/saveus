@@ -89,7 +89,7 @@
         // Get id of current scroll item
         var cur = scrollItems.map(function () {
             if ($(this).offset().top < fromTop)
-                return this;
+                return this; 
         });
 
         // Get the id of the current element
@@ -261,6 +261,7 @@ $("#send-mail").click(function () {
     });
 
 
+    
 
     //Function for show or hide portfolio desctiption.
     $.fn.showHide = function (options) {
@@ -277,10 +278,56 @@ $("#send-mail").click(function () {
             var toggleClick = $(this);
             var toggleDiv = $(this).attr('rel');
             $(toggleDiv).slideToggle(options.speed, options.easing, function () {
-                if (options.changeText == 1) {
-                    $(toggleDiv).is(":visible") ? toggleClick.text(options.hideText) : toggleClick.text(options.showText);
+                //수정중
+                // if (!$(toggleDiv).is(":visible")) {
+                //     alert($(toggleDiv).is(":visible"))
+                //     toggleClick.text(options.showText);
+                // }
+                // if (options.changeText == 1) {
+                //     $(toggleDiv).is(":visible") ? toggleClick.text(options.hideText) : toggleClick.text(options.showText);
+                // }
+            });
+            $.ajax({
+                type : "GET",
+                url : "/public/js/test.html",
+                dataType : "html",
+                error : function() {
+                alert('통신실패!!');
+                },
+                success : function(data) {
+                    $(toggleDiv).html(data);
                 }
             });
+
+/*
+트리용 데이터(JSON)을 화면에 출력
+*/     
+var option = [
+    {field:"task",      width:200},
+    {field:"startdate", width:100},
+    {field:"enddate",   width:100}
+];
+var data = [
+    {"task": "job1", "startdate": "2016-10-11", "enddate": "2016-11-11"},
+    {"task": "job2", "startdate": "2016-10-11", "enddate": "2016-10-30"},
+    {"task": "job3", "startdate": "2016-11-12", "enddate": "2016-12-11"}
+];
+
+window.onload = function() {
+var tree = $("#tree");
+var table = $("<table>").appendTo(tree);
+table.css({"border-collapse": "collapse", "border": "1px gray solid"});
+
+$.each( data, function( index, row) {
+var tr = $("<tr>").appendTo(table);
+$.each( option, function( i, fieldInfo ) {
+var td = $("<td>").appendTo(tr);
+td.html( row[fieldInfo.field]);
+td.css({"width": fieldInfo.width+"px", "border": "1px gray solid"});
+});
+});
+}
+
             return false;
         });
     };
@@ -371,6 +418,18 @@ $("#send-mail").click(function () {
             });
         }
     });
+
+
+
+
+
+
+
+
+
+
+
+  
 });
 
 //Initialize google map for contact setion with your location.
@@ -409,3 +468,6 @@ function initializeMap() {
 
     infowindow.open(map, marker);
 }
+
+
+
