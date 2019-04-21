@@ -441,7 +441,7 @@ function initializeMap() {
 
     var centerLon = lon - 0.0105;
 
-    var myOptions = {
+    /*var myOptions = {
         scrollwheel: false,
         draggable: false,
         disableDefaultUI: true,
@@ -456,6 +456,18 @@ function initializeMap() {
         map: map,
         position: new google.maps.LatLng(lat, lon),
 
+    });*/
+
+    var myOptions = {
+        center: new daum.maps.LatLng(37.40424, 126.93005),
+        level: 3
+    };
+
+    var map = new daum.maps.Map(document.getElementById('map-canvas'), myOptions);
+
+    var marker = new daum.maps.Marker({
+        position: new daum.maps.LatLng(37.40401, 126.93067), // 마커의 좌표
+        map: map // 마커를 표시할 지도 객체
     });
 
     var infowindow = new google.maps.InfoWindow({

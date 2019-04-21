@@ -730,9 +730,9 @@ p {
     height:500px;
 }
 .map-canvas {
-    position:absolute;
+    margin:0 auto;
     margin-bottom:20px;
-    width:100%;
+    width:1200px;
     height:500px;
     color: #29383F;
     position:absolute;
