@@ -470,7 +470,19 @@ function initializeMap() {
         map: map // 마커를 표시할 지도 객체
     });
 
-    var infowindow = new google.maps.InfoWindow({
+    // 마커 위에 표시할 인포윈도우를 생성한다
+	var infowindow = new daum.maps.InfoWindow({
+	    content : '<div style="padding:5px;">SaveUs가 전산관에?!!!</div>' // 인포윈도우에 표시할 내용
+	});
+
+	// 인포윈도우를 지도에 표시한다
+    infowindow.open(map, marker);
+        
+    daum.maps.event.addListener(marker, 'click', function() {
+        alert('경기도 안양시 동안구 임곡로 29 전산관');
+    });
+
+    /*var infowindow = new google.maps.InfoWindow({
         content: "Your content goes here!"
     });
 
@@ -478,7 +490,7 @@ function initializeMap() {
         infowindow.open(map, marker);
     });
 
-    infowindow.open(map, marker);
+    infowindow.open(map, marker);*/
 }
 
 
