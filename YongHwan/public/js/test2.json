@@ -1,0 +1,5 @@
+[
+    {"task": "job1", "startdate": "2016-10-11", "enddate": "2016-11-11"},
+    {"task": "job2", "startdate": "2016-10-11", "enddate": "2016-10-30"},
+    {"task": "job3", "startdate": "2016-11-12", "enddate": "2016-12-11"}
+]

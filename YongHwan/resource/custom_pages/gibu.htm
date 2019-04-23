@@ -102,18 +102,17 @@
 
     <script>
 
-var option =[
-    {
-        "name": "xx 캠페인>깨끗한 물"
-    }
-]
-
-        $(document).ready(function(){
-            var info = $("#info");
-                
-                $.each( option, function( i, fieldInfo ) {
-                    info.html( fieldInfo.name);
+        $(document).ready(function() {
+            $.getJSON( "public/jsons/donation_info.json", function( data ) {
+                $("#info").html(data["name"]);
+                $(data["members"]).each(function(i, member) {
+                    if (i != 0) { $("#members").append(", "); }
+                    $("#members").append(member);
                 });
+                $.each(data["albums"], function(key, value) {
+                    $("#albums").append("<li>" + key + ": " + value + "</li>\n");
+                });
+            });
         });
     </script>
 

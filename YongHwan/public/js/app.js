@@ -287,6 +287,8 @@ $("#send-mail").click(function () {
                 //     $(toggleDiv).is(":visible") ? toggleClick.text(options.hideText) : toggleClick.text(options.showText);
                 // }
             });
+            // "/resource/custom_pages/gibu.htm",
+            // "/public/js/test.htm",
             $.ajax({
                 type : "GET",
                 url : "/resource/custom_pages/gibu.htm",
