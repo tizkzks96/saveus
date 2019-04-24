@@ -1,0 +1,95 @@
+{
+    "name": "여자친구",
+    "slidingDivList":{
+        "slidingDiv1": 
+            {
+            "subtitle": "아이들이 깨끗한 물을 마실 수 있도록 도와주세요",
+            "detailtitle1": "물 한방울이 얼마나 소중한지 아시나요?",
+            "detailcontents1":"detailcontents1",
+            "detailtitle2": "물이 부족해 마음껏 사용하지 못하는 현실?",
+            "detailcontents2":"detailcontents2",
+            "imageurl" : "/public/images/Portfolio01.png"
+            }
+        
+    },
+
+    "slidingDiv2": 
+        {
+            "subtitle": "지구를 보존해주세요",
+            "detailtitle1": "",
+            "detailcontents1":"detailcontents1",
+            "detailtitle2": "물이 부족해 마음껏 사용하지 못하는 현실?",
+            "detailcontents2":"detailcontents2",
+            "imageurl" : "/public/images/Portfolio02.png"
+        },
+
+    "slidingDiv3": 
+        {
+            "subtitle": "서브타이틀2",
+            "detailtitle1": "물 한방울이 얼마나 소중한지 아시나요?",
+            "detailcontents1":"detailcontents1",
+            "detailtitle2": "물이 부족해 마음껏 사용하지 못하는 현실?",
+            "detailcontents2":"detailcontents2",
+            "imageurl" : "/public/images/Portfolio03.png"
+        },
+
+    "slidingDiv4": 
+        {
+            "subtitle": "서브타이틀3",
+            "detailtitle1": "물 한방울이 얼마나 소중한지 아시나요?",
+            "detailcontents1":"detailcontents1",
+            "detailtitle2": "물이 부족해 마음껏 사용하지 못하는 현실?",
+            "detailcontents2":"detailcontents2",
+            "imageurl" : "/public/images/Portfolio04.png"
+        },
+
+    "slidingDiv5": 
+        {
+            "subtitle": "서브타이틀4",
+            "detailtitle1": "물 한방울이 얼마나 소중한지 아시나요?",
+            "detailcontents1":"detailcontents1",
+            "detailtitle2": "물이 부족해 마음껏 사용하지 못하는 현실?",
+            "detailcontents2":"detailcontents2",
+            "imageurl" : "/public/images/Portfolio05.png"
+        },
+
+    "slidingDiv6": 
+        {
+            "subtitle": "서브타이틀5",
+            "detailtitle1": "물 한방울이 얼마나 소중한지 아시나요?",
+            "detailcontents1":"detailcontents1",
+            "detailtitle2": "물이 부족해 마음껏 사용하지 못하는 현실?",
+            "detailcontents2":"detailcontents2",
+            "imageurl" : "/public/images/Portfolio06.png"
+        },
+
+    "slidingDiv7": 
+        {
+            "subtitle": "서브타이틀6",
+            "detailtitle1": "물 한방울이 얼마나 소중한지 아시나요?",
+            "detailcontents1":"detailcontents1",
+            "detailtitle2": "물이 부족해 마음껏 사용하지 못하는 현실?",
+            "detailcontents2":"detailcontents2",
+            "imageurl" : "/public/images/Portfolio07.png"
+        },
+
+    "slidingDiv8": 
+        {
+            "subtitle": "서브타이틀7",
+            "detailtitle1": "물 한방울이 얼마나 소중한지 아시나요?",
+            "detailcontents1":"detailcontents1",
+            "detailtitle2": "물이 부족해 마음껏 사용하지 못하는 현실?",
+            "detailcontents2":"detailcontents2",
+            "imageurl" : "/public/images/Portfolio08.png"
+        },
+
+    "slidingDiv9": 
+        {
+            "subtitle": "서브타이틀8",
+            "detailtitle1": "물 한방울이 얼마나 소중한지 아시나요?",
+            "detailcontents1":"detailcontents1",
+            "detailtitle2": "물이 부족해 마음껏 사용하지 못하는 현실?",
+            "detailcontents2":"detailcontents2",
+            "imageurl" : "/public/images/Portfolio09.png"
+        }
+}
