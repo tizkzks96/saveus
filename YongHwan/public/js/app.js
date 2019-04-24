@@ -278,20 +278,24 @@ $("#send-mail").click(function () {
             var toggleClick = $(this);
             var toggleDiv = $(this).attr('rel');
             $(toggleDiv).slideToggle(options.speed, options.easing, function () {
+                alert(options.changeText == 1);
                 //수정중
-                // if (!$(toggleDiv).is(":visible")) {
-                //     alert($(toggleDiv).is(":visible"))
-                //     toggleClick.text(options.showText);
-                // }
-                // if (options.changeText == 1) {
-                //     $(toggleDiv).is(":visible") ? toggleClick.text(options.hideText) : toggleClick.text(options.showText);
-                // }
+                if (!$(toggleDiv).is(":visible")) {
+                    
+                    //alert($(toggleDiv).is(":visible"))
+                    toggleClick.text(options.showText);
+                }
+                if (options.changeText == 1) {
+                    alert("AA");
+
+                    $(toggleDiv).is(":visible") ? toggleClick.text(options.hideText) : toggleClick.text(options.showText);
+                }
             });
             // "/resource/custom_pages/gibu.htm",
             // "/public/js/test.htm",
             $.ajax({
                 type : "GET",
-                url : "/public/js/test.html",
+                url : "/resource/custom_pages/gibu.htm",
                 dataType : "html",
                 error : function() {
                 alert('통신실패!!');

@@ -1,8 +1,7 @@
 {
     "name": "여자친구",
     "slidingDivList":{
-        "slidingDiv1": 
-            {
+
             "subtitle": "아이들이 깨끗한 물을 마실 수 있도록 도와주세요",
             "detailtitle1": "물 한방울이 얼마나 소중한지 아시나요?",
             "detailcontents1":"detailcontents1",
@@ -11,5 +10,5 @@
             "imageurl" : "/public/images/Portfolio01.png"
             }
         
-    }
+    
 }
