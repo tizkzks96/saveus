@@ -1,18 +1,15 @@
 {
     "name": "여자친구",
-    "members": [
-        "소원",
-        "예린",
-        "은하",
-        "유주",
-        "신비",
-        "엄지"
-    ],
-    "albums": {
-        "EP 1집": "Season of Glass",
-        "EP 2집": "Flower Bud",
-        "EP 3집": "SNOWFLAKE",
-        "정규 1집": "LOL",
-        "EP 4집": "THE AWAKENING"
+    "slidingDivList":{
+        "slidingDiv1": 
+            {
+            "subtitle": "아이들이 깨끗한 물을 마실 수 있도록 도와주세요",
+            "detailtitle1": "물 한방울이 얼마나 소중한지 아시나요?",
+            "detailcontents1":"detailcontents1",
+            "detailtitle2": "물이 부족해 마음껏 사용하지 못하는 현실?",
+            "detailcontents2":"detailcontents2",
+            "imageurl" : "/public/images/Portfolio01.png"
+            }
+        
     }
 }

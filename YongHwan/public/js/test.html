@@ -12,6 +12,7 @@
                         $("#members").append(member);
                     });
                     $.each(data["albums"], function(key, value) {
+                        alert(value);
                         $("#albums").append("<li>" + key + ": " + value + "</li>\n");
                     });
                 });

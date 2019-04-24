@@ -291,7 +291,7 @@ $("#send-mail").click(function () {
             // "/public/js/test.htm",
             $.ajax({
                 type : "GET",
-                url : "/resource/custom_pages/gibu.htm",
+                url : "/public/js/test.html",
                 dataType : "html",
                 error : function() {
                 alert('통신실패!!');

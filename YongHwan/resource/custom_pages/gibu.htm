@@ -101,16 +101,22 @@
 
 
     <script>
+//if (i != 0) { $("#members").append(", "); }
+//$("#members").append(member);
 
         $(document).ready(function() {
             $.getJSON( "public/jsons/donation_info.json", function( data ) {
-                $("#info").html(data["name"]);
-                $(data["members"]).each(function(i, member) {
-                    if (i != 0) { $("#members").append(", "); }
-                    $("#members").append(member);
+                alert(data["name"]);
+                $.each(data["slidingDivList"], function(asd, tempvalue){
+                    
+                    alert(asd.subtitle);
+                    alert(asd);
                 });
-                $.each(data["albums"], function(key, value) {
-                    $("#albums").append("<li>" + key + ": " + value + "</li>\n");
+                alert(data["slidingDivList.slidingDiv1"]);
+                $("#subtitle").html(data["name"]);
+                var controllData = data["slidingDivList"];
+                $.each(data["slidingDivList"], function(key, value) {
+                    $("#albums").append("<li>" + key + ": " + value.title + "</li>\n");
                 });
             });
         });
@@ -120,7 +126,7 @@
         <div class="campaign">
             <b id="info"></b>
         </div>
-        <div class="title"><h2>아이들이 깨끗한 물을 마실 수 있도록 도와주세요</h2></div>
+        <div class="title"><h2 id="subtitle">아이들이 깨끗한 물을 마실 수 있도록 도와주세요</h2></div>
         <div id="imagelist">
         <div class="image">
                 <img src="/public/images/Portfolio01.png" alt="image01" width="500" height="300">
@@ -144,15 +150,14 @@
     </div>
         <div class="text">
             <ul style="list-style-type: square"><br>
-                <li><b>물 한방울이 얼마나 소중한지 아시나요?</b>
-                        <p></p>Text - Double click to editDouble click to editDouble click to editDouble click to editDouble click to edit
-                        Text - Double click to editDouble click to editDouble click to editDouble click to editDouble click to edit
-                        Text - Double click to editDouble click to editDouble click to editDouble click to editDouble click to edit</p>
+                <li><b id = "detailtitle1">non</b><br>
+                        <p id = "detailcontents1">
+                        non</p>
                 </li>
-                <li><b>물이 부족해 마음껏 사용하지 못하는 현실</b>
-                        <p> Text - Double click to editDouble click to editDouble click to editDouble click to editDouble click to edit
-                        Text - Double click to editDouble click to editDouble click to editDouble click to editDouble click to edit
-                        Text - Double click to editDouble click to editDouble click to editDouble click to editDouble click to edit</p>
+                <li><b id = "detailtitle2">물이 부족해 마음껏 사용하지 못하는 현실</b><br>
+                        <p id = "detailcontents2"> 
+                            non
+                        </p>
                 </li>
             </ul>
         </div>
