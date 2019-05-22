@@ -278,7 +278,7 @@ $("#send-mail").click(function () {
             var toggleClick = $(this);
             var toggleDiv = $(this).attr('rel');
             $(toggleDiv).slideToggle(options.speed, options.easing, function () {
-                alert(options.changeText == 1);
+                //alert(options.changeText == 1);
                 //수정중
                 if (!$(toggleDiv).is(":visible")) {
                     
@@ -286,7 +286,7 @@ $("#send-mail").click(function () {
                     toggleClick.text(options.showText);
                 }
                 if (options.changeText == 1) {
-                    alert("AA");
+                    //alert("AA");
 
                     $(toggleDiv).is(":visible") ? toggleClick.text(options.hideText) : toggleClick.text(options.showText);
                 }
