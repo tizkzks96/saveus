@@ -558,7 +558,7 @@
                         <div id="successSend" class="alert alert-success invisible">
                             <strong>Well done!</strong>Your message has been sent.</div>
                         <div id="errorSend" class="alert alert-error invisible">There was an error.</div>
-                        <form id="contact-form" action="php/mail.php">
+                        <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwH2FGMghXIFasOiqI1uB23B6L9dDY7wyTXo--uD_BnWjPLElwk/exec">
                             <div class="control-group">
                                 <div class="controls">
                                     <input class="span12" type="text" id="name" name="name" placeholder="* Your name..." />
@@ -567,20 +567,26 @@
                             </div>
                             <div class="control-group">
                                 <div class="controls">
-                                    <input class="span12" type="email" name="email" id="email" placeholder="* Your email..." />
-                                    <div class="error left-align" id="err-email">Please enter valid email adress.</div>
+                                    <textarea class="span12" name="message" id="message" placeholder="* message..."></textarea>
+                                    <div class="error left-align" id="err-comment">Please enter your message.</div>
                                 </div>
                             </div>
                             <div class="control-group">
                                 <div class="controls">
-                                    <textarea class="span12" name="comment" id="comment" placeholder="* Comments..."></textarea>
-                                    <div class="error left-align" id="err-comment">Please enter your comment.</div>
+                                     <input class="span12" type="email" name="email" id="email" placeholder="* Your email..." />
+                                     <div class="error left-align" id="err-email">Please enter valid email adress.</div>
                                 </div>
                             </div>
                             <div class="control-group">
                                 <div class="controls">
-                                    <button id="send-mail" class="message-btn">보내기</button>
+                                    <!--<button id="send-mail" class="message-btn">보내기</button>-->
+                                    <button>보내기</button>
                                 </div>
+                            </div>
+                            
+                            <div class="thankyou_message" style="display:none;">
+                                <h2><em>Thanks</em> for contacting us!
+                                  We will get back to you soon!</h2>
                             </div>
                         </form>
                     </div>
