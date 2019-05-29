@@ -277,6 +277,7 @@ $("#send-mail").click(function () {
             $('.toggleDiv').slideUp(options.speed, options.easing);
             var toggleClick = $(this);
             var toggleDiv = $(this).attr('rel');
+            var setData = $(this).attr('setData')
             $(toggleDiv).slideToggle(options.speed, options.easing, function () {
                 //alert(options.changeText == 1);
                 //수정중
@@ -297,11 +298,24 @@ $("#send-mail").click(function () {
                 type : "GET",
                 url : "/resource/custom_pages/gibu.htm",
                 dataType : "html",
+                context: document.body,
                 error : function() {
                 alert('통신실패!!');
                 },
                 success : function(data) {
                     $(toggleDiv).html(data);
+                    
+                    $.getJSON( "public/jsons/donation_info.json", function( data ) {
+                        //alert(data["name"]);
+                        $(data[setData]).each(function(i, values){
+                            $("#subtitle").html(values.subtitle);
+                            $("#detailtitle1").html(values.detailtitle1);
+                            $("#detailcontents1").html(values.detailcontents1);
+                            $("#detailtitle2").html(values.detailtitle2);
+                            $("#detailcontents2").html(values.detailcontents2);
+                        });
+                        
+                    });
                 }
             });
 

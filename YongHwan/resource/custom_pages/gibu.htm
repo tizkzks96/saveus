@@ -105,23 +105,23 @@
 //$("#members").append(member);
 
         $(document).ready(function() {
-            $.getJSON( "public/jsons/donation_info.json", function( data ) {
-                //alert(data["name"]);
-                $(data["slidingDivList"]).each(function(i, values){
-                    $("#subtitle").html(values.subtitle);
-                    $("#detailtitle1").html(values.detailtitle1);
-                    $("#detailcontents1").html(values.detailcontents1);
-                    $("#detailtitle2").html(values.detailtitle2);
-                    $("#detailcontents2").html(values.detailcontents2);
-                });
-                $.each(data["slidingDivList"], function(asd, tempvalue){
+            // $.getJSON( "public/jsons/donation_info.json", function( data ) {
+            //     //alert(data["name"]);
+            //     $(data["slidingDivList"]).each(function(i, values){
+            //         $("#subtitle").html(values.subtitle);
+            //         $("#detailtitle1").html(values.detailtitle1);
+            //         $("#detailcontents1").html(values.detailcontents1);
+            //         $("#detailtitle2").html(values.detailtitle2);
+            //         $("#detailcontents2").html(values.detailcontents2);
+            //     });
+            //     $.each(data["slidingDivList"], function(asd, tempvalue){
                     
-                });
-                //var controllData = data["slidingDivList"];
-                $.each(data["slidingDivList"], function(key, value) {
-                    $("#albums").append("<li>" + key + ": " + value.title + "</li>\n");
-                });
-            });
+            //     });
+            //     //var controllData = data["slidingDivList"];
+            //     $.each(data["slidingDivList"], function(key, value) {
+            //         $("#albums").append("<li>" + key + ": " + value.title + "</li>\n");
+            //     });
+            // });
         });
     </script>
 
