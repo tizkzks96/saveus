@@ -1,146 +1,138 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-}
-
-html {
-  font-family: "Lucida Sans", sans-serif;
-}
-
-.header {
-  background-color: #33cc54;
-  color: #ffffff;
-  padding: 15px;
-}
-
-.menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menu li {
-  padding: 8px;
-  margin-bottom: 7px;
-  background-color: #33b5e5;
-  color: #ffffff;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-
-.menu li:hover {
-  background-color: #1fc5fc;
-}
-
-.aside {
-  background-color: #33b5e5;
-  padding: 15px;
-  color: #ffffff;
-  text-align: center;
-  font-size: 14px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-
-.footer {
-  background-color: #ccbbdd;
-  color: #ffffff;
-  text-align: center;
-  position:absolute;
-  bottom:0;
-  width:100%;
-  font-size: 12px;
-  padding: 1px;
-}
-
-/* For mobile phones: */
-[class*="col-"] {
-  width: 100%;
-}
-
-@media only screen and (min-width: 600px) {
-  /* For tablets: */
-  .col-s-1 {width: 8.33%;}
-  .col-s-2 {width: 16.66%;}
-  .col-s-3 {width: 25%;}
-  .col-s-4 {width: 33.33%;}
-  .col-s-5 {width: 41.66%;}
-  .col-s-6 {width: 50%;}
-  .col-s-7 {width: 58.33%;}
-  .col-s-8 {width: 66.66%;}
-  .col-s-9 {width: 75%;}
-  .col-s-10 {width: 83.33%;}
-  .col-s-11 {width: 91.66%;}
-  .col-s-12 {width: 100%;}
-}
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
-}
-</style>
-</head>
+<title>생명의 물</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body>
 
-<div class="header">
-  <h1>생명의 물</h1>
-</div>
-
-<div class="row">
-  <div class="col-3 col-s-3 menu">
-  <ul>
-    <li>건강</li> 
-    <li>교육</li> 
-    <li>삶</li> 
-    <li>인생</li> 
-  </ul>
-  </div>
-
-  <div class="col-6 col-s-9">
-    <h1>건강</h1>
-    <p>하루 성인이 마셔야 할 총 물의 권장량은 하루 1~2리터 가량이며, 이는 200cc 7~8잔 정도의 양에 해당된다. 물을 적당히 마시지 않으면 체내 수분이 부족하게 된다.<br><br>물을 많이 마시지 않은 사람들의 특징을 보면 식사 시나 갈증이 날 때만 물을 찾곤 하는데, 이는 잘못된 습관이 형성된 것이다. 갈증을 느끼는 것은 몸에 물이 부족하다는 것을 보내는 하나의 신호이다.<br><br>
-      몸에 수분이 부족해지면 탈수는 물론 변비, 피부노화, 노폐물의 배출이 제대로 이루어지지 않아 자연히 몸의 리듬이 깨지기 쉬워진다. 갈증이 느껴지지 않는다고 체내에서 물을 필요로 하지 않은 것은 아니다.</p>
-  </div>
-
-  <div class="col-3 col-s-12">
-    <div class="aside">
-      <h2>What?</h2>
-      <p></p>
-      <h2>Where?</h2>
-      <p>Crete is a Greek island in the Mediterranean Sea.</p>
-      <h2>How?</h2>
-      <p>You can reach Chania airport from all over Europe.</p>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b>LIFE</b> of Water</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#projects" class="w3-bar-item w3-button">활동</a>
+      <a href="#introduce" class="w3-bar-item w3-button">소개</a>
     </div>
   </div>
 </div>
-<br>
-<br>
-<div class="footer">
-  <p>당신의 성원에 힘입어 저희 saveUs 는 투명하게 기금을 관리하고있습니다.</p>
+
+<!-- 헤더 -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="/public/images/water.png" alt="Architecture" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Save</b></span> <span class="w3-hide-small w3-text-light-grey">Us</span></h1>
+  </div>
+</header>
+
+<!-- 페이지 -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  
+  <div class="w3-container w3-padding-32" id="projects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16"></h3>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">빗물관리시설</div>
+        <img src="/public/images/Rank2/water1.PNG" alt="water" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">세계 물의 날</div>
+        <img src="/public/images/Rank2/water2.png" alt="water" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">함께 마셔요</div>
+        <img src="/public/images/Rank2/water3.png" alt="water" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">단합</div>
+        <img src="/public/images/Rank2/water4.png" alt="water" style="width:100%">
+      </div>
+    </div>
+  </div>
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">기쁨의 물</div>
+        <img src="/public/images/Rank2/water5.png" alt="water" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">나눔의 물</div>
+        <img src="/public/images/Rank2/water6.png" alt="water" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">깨끗한물캠페인</div>
+        <img src="/public/images/Rank2/water7.png" alt="water" style="width:100%">
+      </div>
+    </div>
+
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">수도공급</div>
+        <img src="/public/images/Rank2/water8.png" alt="water" style="width:100%">
+      </div>
+    </div>
+
+
+
+
+  <div class="w3-container w3-padding-32" id="introduce">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">소개</h3>
+    <p>깨끗한 물을 마시지 못해 매년 2천만 명이 콜레라, 기생충, 장티푸스 같은 질병에 결려 사망하고 있습니다. 
+        특히 면역력이 약한 4,500명이 매일 더러운 물 때문에 죽어가고 있습니다. 환경재단은 2006년부터 몽골, 라오스, 캄보디아, 베트남 등에 우물과 빗물관리시설을 지원, 
+        아시아의 이웃들이 건강하고 깨끗한 물을 먹고 마시며 사용할 수 있도록 돕고 있습니다.
+
+  </div>
+
+  <div class="w3-container w3-padding-32" id="with">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">함께하는 사람들</h3>
+  
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/public/images/person/person1.png" alt="non" style="width:100%">
+      <h3>김xx</h3>
+      <p class="opacity"></p>
+      
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/public/images/person/person2.png" alt="non" style="width:100%">
+      <h3>최xx</h3>
+      <p class="opacity"></p>
+      
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/public/images/person/person3.png" alt="non" style="width:100%">
+      <h3>황xx</h3>
+      <p class="opacity"></p>
+      
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/public/images/person/person4.png" alt="non" style="width:100%">
+      <h3>이xx</h3>
+      <p class="opacity"></p>
+      
+    </div>
+  </div>
 </div>
+
+<!-- 푸터 -->
+<footer class="w3-center w3-light-green w3-padding-16">
+  <p>당신의 성원에 힘입어 저희  <a href="http://localhost:8000/" title="Life of Water" target="_blank" class="w3-hover-text-green">SaveUs</a> 는 투명하게 기금을 관리하고있습니다.</p>
+</footer>
 
 </body>
 </html>
