@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html>
     <head>
         <meta charset=utf-8>
@@ -96,34 +96,19 @@
                 border-radius:5px;
             }
         </style>
+		
+        <script>
+            function popup(){
+                var url = "/resource/custom_pages/money.htm";
+                var name = "popup test";
+                var option = "width = 520, height = 450, top = 100, left = 200, location = no, scrollbars=no"
+                window.open(url, name, option);
+            }
+        </script>
     </head>
     <body>
 
 
-    <script>
-//if (i != 0) { $("#members").append(", "); }
-//$("#members").append(member);
-
-        $(document).ready(function() {
-            // $.getJSON( "public/jsons/donation_info.json", function( data ) {
-            //     //alert(data["name"]);
-            //     $(data["slidingDivList"]).each(function(i, values){
-            //         $("#subtitle").html(values.subtitle);
-            //         $("#detailtitle1").html(values.detailtitle1);
-            //         $("#detailcontents1").html(values.detailcontents1);
-            //         $("#detailtitle2").html(values.detailtitle2);
-            //         $("#detailcontents2").html(values.detailcontents2);
-            //     });
-            //     $.each(data["slidingDivList"], function(asd, tempvalue){
-                    
-            //     });
-            //     //var controllData = data["slidingDivList"];
-            //     $.each(data["slidingDivList"], function(key, value) {
-            //         $("#albums").append("<li>" + key + ": " + value.title + "</li>\n");
-            //     });
-            // });
-        });
-    </script>
 
 
         <div class="campaign">
@@ -131,8 +116,8 @@
         </div>
         <div class="title"><h2 id="subtitle"></h2></div>
         <div id="imagelist">
-        <div class="image">
-                <img src="/public/images/Portfolio01.png" alt="image01" width="500" height="300">
+        <div class="image" id = "imageurl">
+		
         </div>
     
         <div class="people">
@@ -148,7 +133,7 @@
             <b>70%</b> 달성<br>
             <b>000,000,000</b>원 (목표금액 000,000,000원)<br>
             <b>몇명</b>의 기부자<br>
-            <div class="send">후원하기</div>
+            <div class="send"><a href = "javascript:popup()" target = "_blank">후원하기</a></div>
         </div>
     </div>
         <div class="text">
